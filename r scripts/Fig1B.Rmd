@@ -1,0 +1,140 @@
+---
+title: "CyFOF on NHP BAL"
+author: "Steven Makatsa"
+output:
+  html_document:
+    toc: yes
+    toc_depth: 4
+    toc_float:
+      collapsed: yes
+date: "version `r format(Sys.time(), '%B %d, %Y')`"
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, message=F}
+library(readxl)
+library(HDCytoData)
+library(CATALYST)
+library(flowCore)
+library(ggplot2)
+library(cowplot)
+library(diffcyt)
+library(here)
+```
+
+## Read in data
+
+```{r read in data}
+metadata_filename <- "metadata.xlsx"
+md <- read_excel(metadata_filename)
+head(data.frame(md))
+
+fcs <- list.files(path = "C:/Users/Steven Makatsa/OneDrive - UW/Shared Documents - SeshadriLab/Members/MakatsaSteven/CyTOF/Tricia_s samples/Matt_s samples/Main/data_analysis/FlowSOM/BAL_Leukocytes/fcs_files", pattern =".fcs$")
+
+fs <- read.flowSet(fcs, path = "C:/Users/Steven Makatsa/OneDrive - UW/Shared Documents - SeshadriLab/Members/MakatsaSteven/CyTOF/Tricia_s samples/Matt_s samples/Main/data_analysis/FlowSOM/BAL_Leukocytes/fcs_files", transformation = FALSE, truncate_max_range = FALSE)
+
+fs
+
+panel <- "Panel_CD.xlsx"
+panel <- read_excel(panel)
+data.frame(panel)
+
+# spot check that all panel columns are in the flowSet object
+all(panel$fcs_colname %in% colnames(fs))
+
+# construct SingleCellExperiment
+sce <- prepData(fs, panel, md, features = panel$fcs_colname)
+```
+
+## Diagnostic plots
+
+```{r, message=F}
+# Check counts
+n_cells(sce) 
+plotCounts(sce, group_by = "sample_id", color_by = "condition")
+```
+
+## Cell population identification
+
+```{r, message=F}
+# Run FlowSOM
+set.seed(20240513)
+sce <- cluster(sce, features = "type",
+               xdim = 18, ydim = 18, maxK = 36, seed = 1234)
+
+plotExprHeatmap(sce, features = "type", 
+                by = "cluster_id", k = "meta36", 
+                bars = TRUE, perc = TRUE)
+```
+
+## Apply manual merging
+
+```{r, message=F}
+merging_table1 <- "mergemacs2.xlsx"
+merging_table1 <- read_excel(merging_table1)
+head(data.frame(merging_table1))
+
+# convert to factor with merged clusters
+merging_table1$new_cluster <- factor(merging_table1$new_cluster)
+
+# apply manual merging
+sce <- mergeClusters(sce, k = "meta36", 
+                     table = merging_table1, id = "merging1", overwrite = TRUE)
+
+plotExprHeatmap(sce, features = "type", 
+                by = "cluster_id", k = "meta36", m = "merging1")
+
+plotExprHeatmap(sce, features = "type",
+                by = "cluster_id", k = "merging1", hm_pal = rev(hcl.colors(10, "YlGnBu")),
+                bars = TRUE, perc = TRUE)
+
+```
+
+## Differential analysis
+
+```{r, message=F}
+plotAbundances(sce, k = "merging1", by = "sample_id")
+
+plotAbundances(sce, k = "merging1", by = "cluster_id", shape_by = "patient_id")
+
+ei <- metadata(sce)$experiment_info
+(da_formula1 <- createFormula(ei, 
+                              cols_fixed = "condition", 
+                              cols_random = "sample_id"))
+
+(da_formula2 <- createFormula(ei, 
+                              cols_fixed = "condition", 
+                              cols_random = c("sample_id", "patient_id")))
+
+contrast <- createContrast(c(1, 1,0))
+
+da_res1 <- diffcyt(sce, 
+                   formula = da_formula1, contrast = contrast,
+                   analysis_type = "DA", method_DA = "diffcyt-DA-GLMM",
+                   clustering_to_use = "merging1", verbose = FALSE)
+da_res2 <- diffcyt(sce, 
+                   formula = da_formula2, contrast = contrast,
+                   analysis_type = "DA", method_DA = "diffcyt-DA-GLMM",
+                   clustering_to_use = "merging1", verbose = FALSE)
+
+names(da_res1)
+
+rowData(da_res1$res) 
+
+table(rowData(da_res1$res)$p_adj < FDR_cutoff)
+
+table(rowData(da_res2$res)$p_adj < FDR_cutoff)
+
+topTable(da_res2, show_props = TRUE, format_vals = TRUE, digits = 2)
+
+table <- topTable(da_res2, show_props = TRUE, format_vals = TRUE, digits = 2)
+
+table <- as.data.frame(table)
+
+write.csv(table, "C:/Users/Steven Makatsa/OneDrive - UW/Shared Documents - SeshadriLab/Members/MakatsaSteven/CyTOF/Tricia_s samples/Matt_s samples/Main/data_analysis/FlowSOM/BAL_Leukocytes/out/Fig.1D.csv", row.names=FALSE)
+```
