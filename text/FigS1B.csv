@@ -1,0 +1,76 @@
+cluster_id,PTID,TimePoint,Subset,Leukocytes
+SEDXX10_preBCG,SEDXX10,No Vax,Macrophages,37.8
+SEDXX10_preBCG,SEDXX10,No Vax,Monocytes,3.1
+SEDXX10_preBCG,SEDXX10,No Vax,Myeloid DCs,0.7
+SEDXX10_preBCG,SEDXX10,No Vax,Plasmacytoid DCs,0.1
+SEDXX10_preBCG,SEDXX10,No Vax,B cells,0
+SEDXX11_preBCG,SEDXX11,No Vax,Macrophages,34
+SEDXX11_preBCG,SEDXX11,No Vax,Monocytes,18.4
+SEDXX11_preBCG,SEDXX11,No Vax,Myeloid DCs,3
+SEDXX11_preBCG,SEDXX11,No Vax,Plasmacytoid DCs,0.2
+SEDXX11_preBCG,SEDXX11,No Vax,B cells,0.6
+SEDXX5_week.4,SEDXX5,W4,Macrophages,15.3
+SEDXX5_week.4,SEDXX5,W4,Monocytes,1.5
+SEDXX5_week.4,SEDXX5,W4,Myeloid DCs,1.1
+SEDXX5_week.4,SEDXX5,W4,Plasmacytoid DCs,0.8
+SEDXX5_week.4,SEDXX5,W4,B cells,1.2
+SEDXX5_week.8,SEDXX5,W8,Macrophages,1.6
+SEDXX5_week.8,SEDXX5,W8,Monocytes,2.4
+SEDXX5_week.8,SEDXX5,W8,Myeloid DCs,0.2
+SEDXX5_week.8,SEDXX5,W8,Plasmacytoid DCs,0.1
+SEDXX5_week.8,SEDXX5,W8,B cells,0.5
+SEDXX8_week.4,SEDXX8,W4,Macrophages,1
+SEDXX8_week.4,SEDXX8,W4,Monocytes,0.9
+SEDXX8_week.4,SEDXX8,W4,Myeloid DCs,0.4
+SEDXX8_week.4,SEDXX8,W4,Plasmacytoid DCs,0.1
+SEDXX8_week.4,SEDXX8,W4,B cells,0.5
+SEDXX1_week.4,SEDXX1,W4,Macrophages,0.4
+SEDXX1_week.4,SEDXX1,W4,Monocytes,1.4
+SEDXX1_week.4,SEDXX1,W4,Myeloid DCs,0.1
+SEDXX1_week.4,SEDXX1,W4,Plasmacytoid DCs,0.2
+SEDXX1_week.4,SEDXX1,W4,B cells,0.4
+SEDXX2_week.4,SEDXX2,W4,Macrophages,0.8
+SEDXX2_week.4,SEDXX2,W4,Monocytes,0.5
+SEDXX2_week.4,SEDXX2,W4,Myeloid DCs,0.2
+SEDXX2_week.4,SEDXX2,W4,Plasmacytoid DCs,0.1
+SEDXX2_week.4,SEDXX2,W4,B cells,0.5
+SEDXX2_week.8,SEDXX2,W8,Macrophages,1.1
+SEDXX2_week.8,SEDXX2,W8,Monocytes,0.9
+SEDXX2_week.8,SEDXX2,W8,Myeloid DCs,0.2
+SEDXX2_week.8,SEDXX2,W8,Plasmacytoid DCs,0.1
+SEDXX2_week.8,SEDXX2,W8,B cells,1
+SEDXX6_week.4,SEDXX6,W4,Macrophages,4.4
+SEDXX6_week.4,SEDXX6,W4,Monocytes,0.7
+SEDXX6_week.4,SEDXX6,W4,Myeloid DCs,0.6
+SEDXX6_week.4,SEDXX6,W4,Plasmacytoid DCs,0
+SEDXX6_week.4,SEDXX6,W4,B cells,1.3
+SEDXX6_week.8,SEDXX6,W8,Macrophages,4
+SEDXX6_week.8,SEDXX6,W8,Monocytes,0.7
+SEDXX6_week.8,SEDXX6,W8,Myeloid DCs,0.2
+SEDXX6_week.8,SEDXX6,W8,Plasmacytoid DCs,0
+SEDXX6_week.8,SEDXX6,W8,B cells,0.5
+SEDXX7_week.4,SEDXX7,W4,Macrophages,3.8
+SEDXX7_week.4,SEDXX7,W4,Monocytes,1.2
+SEDXX7_week.4,SEDXX7,W4,Myeloid DCs,0.2
+SEDXX7_week.4,SEDXX7,W4,Plasmacytoid DCs,0
+SEDXX7_week.4,SEDXX7,W4,B cells,0.2
+SEDXX7_week.8,SEDXX7,W8,Macrophages,5.6
+SEDXX7_week.8,SEDXX7,W8,Monocytes,5.2
+SEDXX7_week.8,SEDXX7,W8,Myeloid DCs,0.3
+SEDXX7_week.8,SEDXX7,W8,Plasmacytoid DCs,0
+SEDXX7_week.8,SEDXX7,W8,B cells,0.4
+SEDXX13_preBCG,SEDXX13,No Vax,Macrophages,55.8
+SEDXX13_preBCG,SEDXX13,No Vax,Monocytes,5
+SEDXX13_preBCG,SEDXX13,No Vax,Myeloid DCs,1.2
+SEDXX13_preBCG,SEDXX13,No Vax,Plasmacytoid DCs,0
+SEDXX13_preBCG,SEDXX13,No Vax,B cells,0.1
+SEDXX14_preBCG,SEDXX14,No Vax,Macrophages,33.1
+SEDXX14_preBCG,SEDXX14,No Vax,Monocytes,3.9
+SEDXX14_preBCG,SEDXX14,No Vax,Myeloid DCs,0.6
+SEDXX14_preBCG,SEDXX14,No Vax,Plasmacytoid DCs,0
+SEDXX14_preBCG,SEDXX14,No Vax,B cells,0.7
+SEDXX12_preBCG,SEDXX12,No Vax,Macrophages,25.4
+SEDXX12_preBCG,SEDXX12,No Vax,Monocytes,13.9
+SEDXX12_preBCG,SEDXX12,No Vax,Myeloid DCs,2.5
+SEDXX12_preBCG,SEDXX12,No Vax,Plasmacytoid DCs,0
+SEDXX12_preBCG,SEDXX12,No Vax,B cells,0.1

@@ -1,0 +1,16 @@
+Sample.,PTID,SAMPLE_ID,TimePoint,STIM,Tissue,Subset,IFNg,CD107a
+SEDXX10_MtbL_02_1.fcs,SEDXX10,SEDXX10_preBCG,No Vax,Mtb_lysate,BAL,NK cells,0,5.82
+SEDXX11_MtbL_02_1.fcs,SEDXX11,SEDXX11_preBCG,No Vax,Mtb_lysate,BAL,NK cells,0,4.43
+SEDXX14_MtbL_02_1.fcs,SEDXX14,SEDXX14_preBCG,No Vax,Mtb_lysate,BAL,NK cells,1.43,10
+SEDXX13_MtbL_02_1.fcs,SEDXX13,SEDXX13_preBCG,No Vax,Mtb_lysate,BAL,NK cells,0,1.77
+SEDXX12_MtbL_01_1.fcs,SEDXX12,SEDXX12_preBCG,No Vax,Mtb_lysate,BAL,NK cells,7.1,0
+SEDXX5_BAL_wk4_MtbL_01_1.fcs,SEDXX5,SEDXX5_wk4,W4,Mtb_lysate,BAL,NK cells,5.61,3.04
+SEDXX8 BAL wk 4 Mtb_02_1.fcs,SEDXX8,SEDXX8_wk4,W4,Mtb_lysate,BAL,NK cells,23.4,3.81
+SEDXX1 BAL wk 4 Mtb_01_1.fcs,SEDXX1,SEDXX1_wk4,W4,Mtb_lysate,BAL,NK cells,1.17,2.08
+SEDXX2_BAL_4wk_MtbL_01_1.fcs,SEDXX2,SEDXX2_wk4,W4,Mtb_lysate,BAL,NK cells,20.33,0
+SEDXX6_BAL_4wk_MtbL_01_1.fcs,SEDXX6,SEDXX6_wk4,W4,Mtb_lysate,BAL,NK cells,3.62,4.8
+SEDXX7_BAL_4wk_MtbL_01_1.fcs,SEDXX7,SEDXX7_wk4,W4,Mtb_lysate,BAL,NK cells,14.5,0
+SEDXX5_BAL_wk8_MtbL_01_1.fcs,SEDXX5,SEDXX5_wk8,W8,Mtb_lysate,BAL,NK cells,19.59,2.32
+SEDXX2_BAL_8wk_MtbL_01_1.fcs,SEDXX2,SEDXX2_wk8,W8,Mtb_lysate,BAL,NK cells,23.87,5.28
+SEDXX6_BAL_8wk_MtbL_01_1.fcs,SEDXX6,SEDXX6_wk8,W8,Mtb_lysate,BAL,NK cells,8.58,18.43
+SEDXX7_BAL_8wk_MtbL_01_1.fcs,SEDXX7,SEDXX7_wk8,W8,Mtb_lysate,BAL,NK cells,32,0

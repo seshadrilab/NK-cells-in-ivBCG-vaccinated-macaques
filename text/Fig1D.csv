@@ -1,0 +1,91 @@
+cluster_id,PTID,TimePoint,Subset,Leukocytes
+SEDXX10_preBCG,SEDXX10,No Vax,NK cells,0.2
+SEDXX10_preBCG,SEDXX10,No Vax,GD T cells,0.1
+SEDXX10_preBCG,SEDXX10,No Vax,MAITs,0.3
+SEDXX10_preBCG,SEDXX10,No Vax,CD8aa T cells,20
+SEDXX10_preBCG,SEDXX10,No Vax,CD8ab T cells,17.3
+SEDXX10_preBCG,SEDXX10,No Vax,CD4 T cells,18.1
+SEDXX11_preBCG,SEDXX11,No Vax,NK cells,0.1
+SEDXX11_preBCG,SEDXX11,No Vax,GD T cells,0.2
+SEDXX11_preBCG,SEDXX11,No Vax,MAITs,1.1
+SEDXX11_preBCG,SEDXX11,No Vax,CD8aa T cells,13.1
+SEDXX11_preBCG,SEDXX11,No Vax,CD8ab T cells,9
+SEDXX11_preBCG,SEDXX11,No Vax,CD4 T cells,14.9
+SEDXX5_week.4,SEDXX5,week.4,NK cells,1.4
+SEDXX5_week.4,SEDXX5,week.4,GD T cells,0.3
+SEDXX5_week.4,SEDXX5,week.4,MAITs,2.4
+SEDXX5_week.4,SEDXX5,week.4,CD8aa T cells,21.5
+SEDXX5_week.4,SEDXX5,week.4,CD8ab T cells,19.5
+SEDXX5_week.4,SEDXX5,week.4,CD4 T cells,23.8
+SEDXX5_week.8,SEDXX5,week.8,NK cells,0.3
+SEDXX5_week.8,SEDXX5,week.8,GD T cells,0.2
+SEDXX5_week.8,SEDXX5,week.8,MAITs,1
+SEDXX5_week.8,SEDXX5,week.8,CD8aa T cells,31.1
+SEDXX5_week.8,SEDXX5,week.8,CD8ab T cells,19
+SEDXX5_week.8,SEDXX5,week.8,CD4 T cells,40.8
+SEDXX8_week.4,SEDXX8,week.4,NK cells,1.4
+SEDXX8_week.4,SEDXX8,week.4,GD T cells,0.2
+SEDXX8_week.4,SEDXX8,week.4,MAITs,0.9
+SEDXX8_week.4,SEDXX8,week.4,CD8aa T cells,19.8
+SEDXX8_week.4,SEDXX8,week.4,CD8ab T cells,8.7
+SEDXX8_week.4,SEDXX8,week.4,CD4 T cells,62.1
+SEDXX1_week.4,SEDXX1,week.4,NK cells,1
+SEDXX1_week.4,SEDXX1,week.4,GD T cells,0.2
+SEDXX1_week.4,SEDXX1,week.4,MAITs,1.9
+SEDXX1_week.4,SEDXX1,week.4,CD8aa T cells,16.4
+SEDXX1_week.4,SEDXX1,week.4,CD8ab T cells,2.6
+SEDXX1_week.4,SEDXX1,week.4,CD4 T cells,65.3
+SEDXX2_week.4,SEDXX2,week.4,NK cells,1.4
+SEDXX2_week.4,SEDXX2,week.4,GD T cells,0.3
+SEDXX2_week.4,SEDXX2,week.4,MAITs,3.3
+SEDXX2_week.4,SEDXX2,week.4,CD8aa T cells,16.6
+SEDXX2_week.4,SEDXX2,week.4,CD8ab T cells,11.1
+SEDXX2_week.4,SEDXX2,week.4,CD4 T cells,55.6
+SEDXX2_week.8,SEDXX2,week.8,NK cells,0.9
+SEDXX2_week.8,SEDXX2,week.8,GD T cells,0.3
+SEDXX2_week.8,SEDXX2,week.8,MAITs,0.7
+SEDXX2_week.8,SEDXX2,week.8,CD8aa T cells,29.4
+SEDXX2_week.8,SEDXX2,week.8,CD8ab T cells,19.3
+SEDXX2_week.8,SEDXX2,week.8,CD4 T cells,40.8
+SEDXX6_week.4,SEDXX6,week.4,NK cells,3.6
+SEDXX6_week.4,SEDXX6,week.4,GD T cells,0.1
+SEDXX6_week.4,SEDXX6,week.4,MAITs,5.2
+SEDXX6_week.4,SEDXX6,week.4,CD8aa T cells,30.9
+SEDXX6_week.4,SEDXX6,week.4,CD8ab T cells,26.9
+SEDXX6_week.4,SEDXX6,week.4,CD4 T cells,21.3
+SEDXX6_week.8,SEDXX6,week.8,NK cells,1.7
+SEDXX6_week.8,SEDXX6,week.8,GD T cells,0
+SEDXX6_week.8,SEDXX6,week.8,MAITs,2.8
+SEDXX6_week.8,SEDXX6,week.8,CD8aa T cells,35.4
+SEDXX6_week.8,SEDXX6,week.8,CD8ab T cells,37.3
+SEDXX6_week.8,SEDXX6,week.8,CD4 T cells,15.4
+SEDXX7_week.4,SEDXX7,week.4,NK cells,0.9
+SEDXX7_week.4,SEDXX7,week.4,GD T cells,0.1
+SEDXX7_week.4,SEDXX7,week.4,MAITs,2.9
+SEDXX7_week.4,SEDXX7,week.4,CD8aa T cells,18.7
+SEDXX7_week.4,SEDXX7,week.4,CD8ab T cells,24.8
+SEDXX7_week.4,SEDXX7,week.4,CD4 T cells,40.3
+SEDXX7_week.8,SEDXX7,week.8,NK cells,0.1
+SEDXX7_week.8,SEDXX7,week.8,GD T cells,0.1
+SEDXX7_week.8,SEDXX7,week.8,MAITs,4.4
+SEDXX7_week.8,SEDXX7,week.8,CD8aa T cells,18.4
+SEDXX7_week.8,SEDXX7,week.8,CD8ab T cells,11.8
+SEDXX7_week.8,SEDXX7,week.8,CD4 T cells,51.1
+SEDXX13_preBCG,SEDXX13,No Vax,NK cells,0.1
+SEDXX13_preBCG,SEDXX13,No Vax,GD T cells,0.4
+SEDXX13_preBCG,SEDXX13,No Vax,MAITs,0.2
+SEDXX13_preBCG,SEDXX13,No Vax,CD8aa T cells,6.1
+SEDXX13_preBCG,SEDXX13,No Vax,CD8ab T cells,7.8
+SEDXX13_preBCG,SEDXX13,No Vax,CD4 T cells,19.6
+SEDXX14_preBCG,SEDXX14,No Vax,NK cells,0
+SEDXX14_preBCG,SEDXX14,No Vax,GD T cells,1
+SEDXX14_preBCG,SEDXX14,No Vax,MAITs,0.2
+SEDXX14_preBCG,SEDXX14,No Vax,CD8aa T cells,10.5
+SEDXX14_preBCG,SEDXX14,No Vax,CD8ab T cells,16
+SEDXX14_preBCG,SEDXX14,No Vax,CD4 T cells,26.4
+SEDXX12_preBCG,SEDXX12,No Vax,NK cells,0.1
+SEDXX12_preBCG,SEDXX12,No Vax,GD T cells,0.6
+SEDXX12_preBCG,SEDXX12,No Vax,MAITs,0.5
+SEDXX12_preBCG,SEDXX12,No Vax,CD8aa T cells,11.7
+SEDXX12_preBCG,SEDXX12,No Vax,CD8ab T cells,4.6
+SEDXX12_preBCG,SEDXX12,No Vax,CD4 T cells,33.4

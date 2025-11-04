@@ -1,0 +1,31 @@
+Sample.,PTID,TimePoint,STIM,sample_type,CD69,CD107a,GranB,GranK,IFNg,Perforin,CXCR3,HLA_DR
+SEDXX10_MtbL_02_1.fcs,SEDXX10,No Vax,Mtb_lysate,BAL,CD69+,5.02,0,0,0,1.2,0,0
+SEDXX11_MtbL_02_1.fcs,SEDXX11,No Vax,Mtb_lysate,BAL,CD69+,4.11,22.7,5.88,0,41.6,0,0
+SEDXX14_MtbL_02_1.fcs,SEDXX14,No Vax,Mtb_lysate,BAL,CD69+,4.76,23.6,6.19,1.59,23.67,0,0
+SEDXX13_MtbL_02_1.fcs,SEDXX13,No Vax,Mtb_lysate,BAL,CD69+,1.86,12.2,11.3,0,13.6,0,4.4
+SEDXX12_MtbL_01_1.fcs,SEDXX12,No Vax,Mtb_lysate,BAL,CD69+,0,3.1,0,13,7.7,0,16.4
+SEDXX10_MtbL_02_1.fcs,SEDXX10,No Vax,Mtb_lysate,BAL,CD69-,16.7,16.7,11.1,0,0,0,5.5
+SEDXX11_MtbL_02_1.fcs,SEDXX11,No Vax,Mtb_lysate,BAL,CD69-,0,0,0,0,0,0,100
+SEDXX14_MtbL_02_1.fcs,SEDXX14,No Vax,Mtb_lysate,BAL,CD69-,57.1,0,0,0,0,0,0
+SEDXX13_MtbL_02_1.fcs,SEDXX13,No Vax,Mtb_lysate,BAL,CD69-,0,0,0,0,0,0,50
+SEDXX12_MtbL_01_1.fcs,SEDXX12,No Vax,Mtb_lysate,BAL,CD69-,0,12.5,0,0,25,0,12.5
+SEDXX5_BAL_wk4_MtbL_01_1.fcs,SEDXX5,week 4,Mtb_lysate,BAL,CD69+,3.12,0,0,6,0,6.9,0
+SEDXX8 BAL wk 4 Mtb_02_1.fcs,SEDXX8,week 4,Mtb_lysate,BAL,CD69+,3.96,2.8,0,24.43,24.3,0,0
+SEDXX1 BAL wk 4 Mtb_01_1.fcs,SEDXX1,week 4,Mtb_lysate,BAL,CD69+,1.93,0,3.9,2.47,0,1,0
+SEDXX2_BAL_4wk_MtbL_01_1.fcs,SEDXX2,week 4,Mtb_lysate,BAL,CD69+,0,20,0,21.12,25.5,0,0
+SEDXX6_BAL_4wk_MtbL_01_1.fcs,SEDXX6,week 4,Mtb_lysate,BAL,CD69+,5,7.9,0,3.78,4.5,1.3,1.5
+SEDXX7_BAL_4wk_MtbL_01_1.fcs,SEDXX7,week 4,Mtb_lysate,BAL,CD69+,0.02,24.4,0,14.69,23.5,0,0
+SEDXX5_BAL_wk4_MtbL_01_1.fcs,SEDXX5,week 4,Mtb_lysate,BAL,CD69-,1.81,0,0.8,0,0,6.6,0
+SEDXX8 BAL wk 4 Mtb_02_1.fcs,SEDXX8,week 4,Mtb_lysate,BAL,CD69-,0.69,0,0,1.37,0,0,0
+SEDXX1 BAL wk 4 Mtb_01_1.fcs,SEDXX1,week 4,Mtb_lysate,BAL,CD69-,2.3,0,0,0,0,2.2,0
+SEDXX2_BAL_4wk_MtbL_01_1.fcs,SEDXX2,week 4,Mtb_lysate,BAL,CD69-,0,0.6,2.2,0,0,0,0
+SEDXX6_BAL_4wk_MtbL_01_1.fcs,SEDXX6,week 4,Mtb_lysate,BAL,CD69-,2.1,5.9,0,0.28,4.2,1.5,0
+SEDXX7_BAL_4wk_MtbL_01_1.fcs,SEDXX7,week 4,Mtb_lysate,BAL,CD69-,0,0,15.6,2.22,0,0,0
+SEDXX5_BAL_wk8_MtbL_01_1.fcs,SEDXX5,week 8,Mtb_lysate,BAL,CD69+,2.65,0.2,0,20.12,12.1,0,0
+SEDXX2_BAL_8wk_MtbL_01_1.fcs,SEDXX2,week 8,Mtb_lysate,BAL,CD69+,5.26,11.9,0,24.32,18.6,0,2.2
+SEDXX6_BAL_8wk_MtbL_01_1.fcs,SEDXX6,week 8,Mtb_lysate,BAL,CD69+,18.47,4.9,0,8.72,21.8,1.7,7.1
+SEDXX7_BAL_8wk_MtbL_01_1.fcs,SEDXX7,week 8,Mtb_lysate,BAL,CD69+,0,17.9,0.6,32.15,26.9,0,0
+SEDXX5_BAL_wk8_MtbL_01_1.fcs,SEDXX5,week 8,Mtb_lysate,BAL,CD69-,0,0,0,0,0,0,0
+SEDXX2_BAL_8wk_MtbL_01_1.fcs,SEDXX2,week 8,Mtb_lysate,BAL,CD69-,3.23,0,0,0,0,0,0
+SEDXX6_BAL_8wk_MtbL_01_1.fcs,SEDXX6,week 8,Mtb_lysate,BAL,CD69-,12.86,21.4,30.7,0,26.4,1.6,7.1
+SEDXX7_BAL_8wk_MtbL_01_1.fcs,SEDXX7,week 8,Mtb_lysate,BAL,CD69-,100,50,0,0,0,0,0
