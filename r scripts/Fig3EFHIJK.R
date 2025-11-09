@@ -9,37 +9,34 @@ library(ggpubr)
 library(rstatix)  
 library(ggpubr)  # For easy data-visualization
 
-# Set wd
-setwd("C:/Users/Steven Makatsa/OneDrive - UW/Shared Documents - SeshadriLab/Manuscripts/InPreparation/2023_IMPAcTB_CyTOF/Figures")
-
 # Read in the CSVs
-Fig3E_I <- read.csv("text/Fig3E_I.csv")
+Fig3EFHI <- read.csv("text/Fig3EFHI.csv")
 Fig3JK <- read.csv("text/Fig3JK.csv")
 
 #####
 ### BAL Phenotype
-Fig3E_I.bal.unstim <- Fig3E_I %>% filter(STIM == "Unstim", Tissue == "BAL") %>% arrange(TimePoint)
+Fig3EFHI.bal.unstim <- Fig3EFHI %>% filter(STIM == "Unstim", Tissue == "BAL") %>% arrange(TimePoint)
 
-a <- ggboxplot(Fig3E_I.bal.unstim, x = "TimePoint", y = "CD16",
+a <- ggboxplot(Fig3EFHI.bal.unstim, x = "TimePoint", y = "CD16",
                ylim = c(0, 100)) +
   geom_dotplot(
     aes(fill = NULL, color = NULL),
     binaxis='y', stackdir='center', dotsize = 1.3,
     position = position_dodge(0.8)) + ylab("% CD16+ NK cells")
-a_test <- Fig3E_I.bal.unstim %>% t_test(CD16 ~ TimePoint, ref.group = "No. Vax")  %>%
+a_test <- Fig3EFHI.bal.unstim %>% t_test(CD16 ~ TimePoint, ref.group = "No. Vax")  %>%
   adjust_pvalue() %>%  add_significance("p.adj") %>% add_xy_position(x = "TimePoint")
 ap <-  a +
   stat_pvalue_manual(a_test, label = "p", , tip.length = 0.01, size = 4) +
   scale_y_continuous(expand = expansion(mult = c(0, 0.1)))
 ap
 
-b <- ggboxplot(Fig3E_I.bal.unstim, x = "TimePoint", y = "CD69",
+b <- ggboxplot(Fig3EFHI.bal.unstim, x = "TimePoint", y = "CD69",
                ylim = c(0, 100)) +
   geom_dotplot(
     aes(fill = NULL, color = NULL),
     binaxis='y', stackdir='center', dotsize = 1.2,
     position = position_dodge(0.8)) + ylab("% CD69+ NK cells")
-b_test <- Fig3E_I.bal.unstim %>% t_test(CD69 ~ TimePoint, ref.group = "No. Vax")  %>%
+b_test <- Fig3EFHI.bal.unstim %>% t_test(CD69 ~ TimePoint, ref.group = "No. Vax")  %>%
   adjust_pvalue() %>%  add_significance("p.adj") %>% add_xy_position(x = "TimePoint")
 bp <-  b +
   stat_pvalue_manual(b_test, label = "p", , tip.length = 0.01, size = 4) +
@@ -47,13 +44,13 @@ bp <-  b +
 bp
 
 ### CD69-GZMB+
-h <- ggboxplot(Fig3E_I.bal.unstim, x = "TimePoint", y = "CD69_GranB",
+h <- ggboxplot(Fig3EFHI.bal.unstim, x = "TimePoint", y = "CD69_GranB",
                ylim = c(0, 100)) +
   geom_dotplot(
     aes(fill = NULL, color = NULL),
     binaxis='y', stackdir='center', dotsize = 1.3,
     position = position_dodge(0.8)) + ylab("% CD69-GZMB+ NK cells")
-h_test <- Fig3E_I.bal.unstim %>% dunn_test(CD69_GranB ~ TimePoint)  %>%
+h_test <- Fig3EFHI.bal.unstim %>% dunn_test(CD69_GranB ~ TimePoint)  %>%
   adjust_pvalue() %>%  add_significance("p.adj") %>% add_xy_position(x = "TimePoint")
 hp <-  h +
   stat_pvalue_manual(h_test, label = "p", , tip.length = 0.01, size = 4) +
@@ -61,13 +58,13 @@ hp <-  h +
 hp
 
 ### CD69+GZMB+
-c <- ggboxplot(Fig3E_I.bal.unstim, x = "TimePoint", y = "CD69GranB",
+c <- ggboxplot(Fig3EFHI.bal.unstim, x = "TimePoint", y = "CD69GranB",
                ylim = c(0, 100)) +
   geom_dotplot(
     aes(fill = NULL, color = NULL),
     binaxis='y', stackdir='center', dotsize = 2,
     position = position_dodge(0.8)) + ylab("% CD69+GZMB+ NK cells")
-c_test <- Fig3E_I.bal.unstim %>% dunn_test(CD69GranB ~ TimePoint)  %>%
+c_test <- Fig3EFHI.bal.unstim %>% dunn_test(CD69GranB ~ TimePoint)  %>%
   adjust_pvalue() %>%  add_significance("p.adj") %>% add_xy_position(x = "TimePoint")
 cp <-  c +
   stat_pvalue_manual(c_test, label = "p", , tip.length = 0.01, size = 4) +
@@ -75,13 +72,13 @@ cp <-  c +
 cp
 
 ### CD69+GZMB-
-d <- ggboxplot(Fig3E_I.bal.unstim, x = "TimePoint", y = "CD69GranB_",
+d <- ggboxplot(Fig3EFHI.bal.unstim, x = "TimePoint", y = "CD69GranB_",
                ylim = c(0, 100)) +
   geom_dotplot(
     aes(fill = NULL, color = NULL),
     binaxis='y', stackdir='center', dotsize = 1.5,
     position = position_dodge(0.8)) + ylab("% CD69+GZMB- NK cells")
-d_test <- Fig3E_I.bal.unstim %>% dunn_test(CD69GranB_ ~ TimePoint)  %>%
+d_test <- Fig3EFHI.bal.unstim %>% dunn_test(CD69GranB_ ~ TimePoint)  %>%
   adjust_pvalue() %>%  add_significance("p.adj") %>% add_xy_position(x = "TimePoint")
 dp <-  d +
   stat_pvalue_manual(d_test, label = "p", , tip.length = 0.01, size = 4) +
@@ -134,5 +131,6 @@ ap <- a +
   stat_pvalue_manual(a_test, label = "p", , tip.length = 0.01, size = 4) +
   scale_y_continuous(expand = expansion(mult = c(0, 0.1)))
 ap
+
 
 # End
