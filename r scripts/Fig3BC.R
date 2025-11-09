@@ -8,9 +8,6 @@ library(ggpubr)
 library(rstatix)  
 library(ggpubr)  # For easy data-visualization
 
-# Set wd
-setwd("C:/Users/Steven Makatsa/OneDrive - UW/Shared Documents - SeshadriLab/Manuscripts/InPreparation/2023_IMPAcTB_CyTOF/Figures")
-
 # Read in the CSVs
 Fig3BC <- read.csv("text/Fig3BC.csv")
 
@@ -46,4 +43,5 @@ cp <- c +
   stat_pvalue_manual(c_test, label = "p", , tip.length = 0.01, size = 4) +
   scale_y_continuous(expand = expansion(mult = c(0, 0.1)))
 cp
+
 
