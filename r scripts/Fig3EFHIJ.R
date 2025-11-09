@@ -9,7 +9,7 @@ library(rstatix)
 library(ggpubr)  # For easy data-visualization
 
 # Read in the CSVs
-nk.phenotype <- read.csv("text/v2/Fig3E_J.csv")
+nk.phenotype <- read.csv("text/v2/Fig3EFHIJ.csv")
 
 #####
 ### PBMC Phenotype
@@ -105,3 +105,4 @@ ap <- a +
 ap
 
 ### End
+
