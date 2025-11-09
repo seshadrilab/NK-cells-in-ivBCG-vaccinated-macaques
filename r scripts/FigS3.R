@@ -8,9 +8,6 @@ library(ggpubr)
 library(rstatix)  
 library(ggpubr)  # For easy data-visualization
 
-# Set wd
-setwd("C:/Users/Steven Makatsa/OneDrive - UW/Shared Documents - SeshadriLab/Manuscripts/InPreparation/2023_IMPAcTB_CyTOF/Figures")
-
 # Read in the CSVs
 FigS3 <- read.csv("text/FigS3.csv")
 
@@ -118,3 +115,4 @@ ap
 
 
 ### End
+
