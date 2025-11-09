@@ -8,9 +8,6 @@ library(ggpubr)
 library(rstatix)  
 library(ggpubr)  # For easy data-visualization
 
-# Set wd
-setwd("C:/Users/Steven Makatsa/OneDrive - UW/Shared Documents - SeshadriLab/Manuscripts/InPreparation/2023_IMPAcTB_CyTOF/Figures")
-
 # Read in the CSVs
 Fig2BCEFHI <- read.csv("text/Fig2BCEFHI.csv")
 Fig2BCEFHI.unstim <- Fig2BCEFHI %>% filter(STIM == "Unstim") %>% arrange(TimePoint)
@@ -93,3 +90,4 @@ fp
 
 ggarrange(a,b,c,d,e,f,
           ncol = 3, nrow = 2, common.legend = FALSE)
+
