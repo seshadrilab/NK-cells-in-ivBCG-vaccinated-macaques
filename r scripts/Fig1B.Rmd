@@ -34,9 +34,10 @@ metadata_filename <- "metadata.xlsx"
 md <- read_excel(metadata_filename)
 head(data.frame(md))
 
-fcs <- list.files(path = "C:/Users/Steven Makatsa/OneDrive - UW/Shared Documents - SeshadriLab/Members/MakatsaSteven/CyTOF/Tricia_s samples/Matt_s samples/Main/data_analysis/FlowSOM/BAL_Leukocytes/fcs_files", pattern =".fcs$")
+# load fcs files
+fcs <- list.files(path = "insert file path", pattern =".fcs$")
 
-fs <- read.flowSet(fcs, path = "C:/Users/Steven Makatsa/OneDrive - UW/Shared Documents - SeshadriLab/Members/MakatsaSteven/CyTOF/Tricia_s samples/Matt_s samples/Main/data_analysis/FlowSOM/BAL_Leukocytes/fcs_files", transformation = FALSE, truncate_max_range = FALSE)
+fs <- read.flowSet(fcs, path = "insert file path", transformation = FALSE, truncate_max_range = FALSE)
 
 fs
 
@@ -73,9 +74,10 @@ plotExprHeatmap(sce, features = "type",
 ```
 
 ## Apply manual merging
+# mergemacs describes clusters manual designated based on the heatmap above
 
 ```{r, message=F}
-merging_table1 <- "mergemacs2.xlsx"
+merging_table1 <- "mergemacs.xlsx"
 merging_table1 <- read_excel(merging_table1)
 head(data.frame(merging_table1))
 
@@ -135,6 +137,5 @@ topTable(da_res2, show_props = TRUE, format_vals = TRUE, digits = 2)
 table <- topTable(da_res2, show_props = TRUE, format_vals = TRUE, digits = 2)
 
 table <- as.data.frame(table)
-
-write.csv(table, "C:/Users/Steven Makatsa/OneDrive - UW/Shared Documents - SeshadriLab/Members/MakatsaSteven/CyTOF/Tricia_s samples/Matt_s samples/Main/data_analysis/FlowSOM/BAL_Leukocytes/out/Fig.1D.csv", row.names=FALSE)
 ```
+
