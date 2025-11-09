@@ -9,9 +9,6 @@ library(ggpubr)
 library(rstatix)  
 library(ggpubr)  # For easy data-visualization
 
-# Set wd
-setwd("C:/Users/Steven Makatsa/OneDrive - UW/Shared Documents - SeshadriLab/Manuscripts/InPreparation/2023_IMPAcTB_CyTOF/Figures")
-
 # Read in the CSVs
 Fig4 <- read.csv("text/Fig4.csv")
 Fig4$TimePoint <- factor(Fig4$TimePoint,levels = c("preBCG", "W2", "W4", "W8", "W12/13"))
@@ -128,4 +125,5 @@ b_test <- Fig4 %>% group_by(TimePoint) %>% wilcox_test(NK_count ~ Protection)  %
 bp <- b +
   stat_pvalue_manual(b_test, label = "p", , tip.length = 0.01, size = 4) +
   scale_y_continuous(expand = expansion(mult = c(0, 0.1)))
+
 bp
