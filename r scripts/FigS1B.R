@@ -8,9 +8,6 @@ library(ggpubr)
 library(rstatix)  
 library(ggpubr)  # For easy data-visualization
 
-# Set wd
-setwd("C:/Users/Steven Makatsa/OneDrive - UW/Shared Documents - SeshadriLab/Manuscripts/InPreparation/2023_IMPAcTB_CyTOF/Figures")
-
 # Read in the CSVs
 FigS1B <- read.csv("text/Supp/FigS1B.csv")
 
@@ -91,4 +88,5 @@ e_test <- FigS1B_pDC %>% group_by(Subset) %>% dunn_test(Leukocytes ~ TimePoint) 
 ep <- e + stat_pvalue_manual(e_test, label = "p", , tip.length = 0.01, size = 4) +
   scale_y_continuous(expand = expansion(mult = c(0, 0.1)))
 ep
+
 
