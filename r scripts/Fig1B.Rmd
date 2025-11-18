@@ -35,6 +35,8 @@ md <- read_excel(metadata_filename)
 head(data.frame(md))
 
 # load fcs files
+## fcs files used in this script were first analyzed using flowjo to gate out dead and CD45 negative cells, Live CD45+ cells were then used for further analysis.
+
 fcs <- list.files(path = "insert file path", pattern =".fcs$")
 
 fs <- read.flowSet(fcs, path = "insert file path", transformation = FALSE, truncate_max_range = FALSE)
@@ -138,5 +140,6 @@ table <- topTable(da_res2, show_props = TRUE, format_vals = TRUE, digits = 2)
 
 table <- as.data.frame(table)
 ```
+
 
 
